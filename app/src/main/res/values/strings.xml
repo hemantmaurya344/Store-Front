@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Store Front</string>
+    <string name="employee_login">Employee Login</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="username">Username</string>
+    <string name="contact_no">contact No</string>
+    <string name="admin_s_code">Admin\'s Code</string>
+    <string name="already_registered">Already Registered</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="discription_text">Step towards a digital store where everyone, from the owner to the staff, is equipped with the technology to simplify their life, increase the effectiveness of their work, and increase their income.</string>
+    <string name="store_logo">store logo</string>
+
+</resources>

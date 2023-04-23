@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img6"
+    tools:context=".AdminDashboard">
+
+    <LinearLayout
+        android:id="@+id/mainlinearLayout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/empheadText"
+        android:background="@drawable/roundcorner"
+        android:backgroundTint="#72717070">
+
+        <ImageView
+            android:id="@+id/backbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hemant Maurya"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="170dp"
+            android:textColor="#F4EFEF"/>
+<!--        dropdown menu need to be build in future-->
+        <ImageView
+            android:id="@+id/adminLogo"
+            android:layout_width="59dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/generateBillBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Bill"
+        app:layout_constraintTop_toBottomOf="@id/mainlinearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:backgroundTint="#532020"
+        android:layout_marginBottom="20dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/empheadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-250dp"
+        android:layout_marginTop="-500dp"
+        android:text="Employee"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/EmplinearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/empheadText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-490dp"
+        android:background="@drawable/roundcorner">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/allEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Employee"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Employee"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/removeEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Employee"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ProductText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-250dp"
+        android:layout_marginTop="-400dp"
+        android:text="Products"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/EmplinearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout
+        android:id="@+id/prod_linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ProductText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-300dp"
+        android:background="@drawable/roundcorner">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/allProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Products"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Product"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/removeProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Product"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/salesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginTop="-200dp"
+        android:text="Sales"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/prod_linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sales_linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salesText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/roundcorner">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/allSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Sales"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginStart="15dp"
+            android:id="@+id/monthSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month Sales"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginStart="15dp"
+            android:id="@+id/todaySale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Sale"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
